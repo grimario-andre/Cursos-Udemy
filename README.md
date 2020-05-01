@@ -2,4 +2,4 @@
 
 ![](./img/udemy.png)
 
-Neste repositório será alocado todos os meteriais nos cursos concluído.
+Neste repositório serão alocados todos os materiais cirados e utilizados dos cursos concluídos.
