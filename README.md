@@ -2,4 +2,4 @@
 
 ![](./img/udemy.png)
 
-Neste repositório será feito alocado todos os meteriais nos cursos concluído.
+Neste repositório será alocado todos os meteriais nos cursos concluído.
