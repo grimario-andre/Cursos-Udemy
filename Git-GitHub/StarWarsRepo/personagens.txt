@@ -2,3 +2,5 @@ Master Yoda.
 Obi Wan Kenobi.
 Anakin Skywalker.
 Jabba the Hut.
+Chewbacca.
+Han Solo.
