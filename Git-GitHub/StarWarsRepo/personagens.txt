@@ -7,9 +7,15 @@ Han Solo.
 Darth Sidious.
 Ray.
 Fin.
+<<<<<<< HEAD
 Qui-Gon Jinn.
 Mace Windu.
 Mace Windu.
 Ahsoka Tano.
 Plo Koon.
 Mace Windu.
+=======
+Mace Windu.
+Ahsoka Tano.
+Plo Koon.
+>>>>>>> Update new two persos.
