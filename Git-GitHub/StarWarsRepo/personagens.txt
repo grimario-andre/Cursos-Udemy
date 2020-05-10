@@ -18,4 +18,8 @@ Mace Windu.
 Mace Windu.
 Ahsoka Tano.
 Plo Koon.
+<<<<<<< HEAD
 >>>>>>> Update new two persos.
+=======
+General Hux.
+>>>>>>> Update new perso. utlizando comando git commit --amend.
