@@ -7,4 +7,3 @@ Dantooine.
 kurat.
 Akiva.
 Naboo.
-Terra.
