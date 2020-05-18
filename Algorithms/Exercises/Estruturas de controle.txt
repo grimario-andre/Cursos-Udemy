@@ -1,0 +1,5 @@
+Sequencial: Representam a execução das ações de um algoritmo de forma encadeada.            
+
+Condicional: Comandos de decisão, SE, SENÃO, ESCOLHA.
+
+Repetição: Repetem uma ou mais ações caso uma condição estiver sendo satifeita, PARA, ENQUNATO, REPITA.
