@@ -2,24 +2,47 @@
 <html>
     <head lang="pt-br">
         <meta charset="utf-8"/>
+        <title>Fomrs</title>
     </head>
     <body>
-        <!-- tag nav, uma tag pra cria containers na pagina, também conhecida como tag estrutural -->
-        <nav>
-            <p><i>conteúdo para uma nav </i>
-        </nav>
-        <!-- tag div, uma tag pra cria divisões na pagina, também conhecida como tag estrutural -->
-        <div>    
-            <!-- criando tabelas as tag  <table> <tr> <td> and <th> -->
-            <table>
-                <!-- tag <tr> inseri linhas -->
-                <!-- tag <td> inseri células --> 
-                <!-- tag <th> inseri células para cabeçalho. -->        
-                <tr><td>célula inserida</td> <th>célula cabeçalho</th></tr>
-                <tr><td>célula inserida</td> <td>célula inserida</td></tr>
-                <tr><td>célula inserida</td> <th>célula cabeçalho<th></th></tr>                    
-            </table>
-        </div>    
+        <!-- tag <fomr> é usando para receber e enviar informações -->
+        <!-- os parametros action(indica a pagina a qual vai recerber ou buscar infomações) e method (recebem subparametros GET/POST) -->
+        <form action="process.php" method="POST">
+            <!-- tag label inclui nomenclatura para anteceder a tag <input> -->
+            <label>Text:</label> 
+                <!-- tag input para inserir campos/botões etc -->
+                <input type="text" name="texto" placeholder="text"/>
+        <br>
+            <label>Password:</label>   
+                <input type="password" name="senha"/>  
+        <br>
+            <label>Hidden information:</label>
+                <input type="hidden" name="informacao_oculta" value="mensagem_oculta"/> 
+        <br>   
+            <label>Select info:</label>
+            <!-- tag <select> poder criar listas para seleção de valores, nomes pré definidos.-->      
+                <select name="Options:">
+                    <!-- tag <option> é uma sub tag -->
+                    <option value="1">Value 1</option>
+                    <option value="2">Value 2</option>
+                    <option value="3">Value 3</option>    
+                </select>
+        <br>
+            <label>Marcação:</label>
+                <input type="radio" name="marcacao1" value="1"/>Value 1 
+                <input type="radio" name="marcacao2" value="2"/>Value 2
+        <br>
+            <label>Check Box:</label>
+            <input type="checkbox" name="ck1" value="1" checked/> Value 1
+            <input type="checkbox" name="ck2" value="2"/> Value 2
+            <input type="checkbox" name="ck3" value="3"/> Value 3
+        <br>  
+            <label>Submit:</label>
+            <input type="submit" name="Send" value="submit"/>
+
+        </form> 
+
+        <br>
         <a href="first_index.html">back first index</a>
     </body>
 </html>
