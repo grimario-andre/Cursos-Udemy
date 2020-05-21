@@ -1,0 +1,13 @@
+/* Meu primeiro arquivo .css */
+
+/* Corpo da página */
+body{
+    background-color:gray;
+}
+
+/* Paragráfo */
+p{
+    color:orangered;
+    font-size: 40px;
+    font-style:"Arial, Times news roman" ;
+}
