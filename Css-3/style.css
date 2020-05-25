@@ -11,3 +11,37 @@ p{
     font-size: 40px;
     font-style:"Arial, Times news roman" ;
 }
+
+/*Remover espaçamento padrao do navegador */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* cabeçalho */
+header{
+    background-color: green;
+    height: 100px;
+}
+
+/* divisórias usando id */
+#esquerda{
+   background-color: red; 
+   min-height: 200px;
+   width: 60%;
+   float: left;
+}
+
+#direita{
+    background-color: yellow;
+    min-height: 200px;
+    width: 40%;
+    float: right;
+}
+
+/* rodapé */
+footer{
+    clear: both;
+    background-color: blue;
+    min-height: 100px;
+}
