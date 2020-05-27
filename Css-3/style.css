@@ -46,6 +46,7 @@ footer{
 
 /* Div */
 #principal{
+    clear: both;
     background-size: 100%;
     background-image: url(../img/cidade.jpeg);
     background-color: red;
@@ -64,4 +65,26 @@ footer{
 .efeito{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10 0 100px 0;
+}
+
+/* Menu style */
+#menu{
+    float: right;
+    margin: 20px 0 0 0;
+}
+
+/* menu style tag <a> */
+#menu a{
+    padding: 5px 5px;
+    text-decoration: none;
+    color:SlateGray;
+    text-shadow: 1px 1px black;
+}
+#menu a:hover{
+    background-color:  rgba(0, 0, 0, 0.5);
+    color: #53b8b0;
+}
+
+#logo{
+    float: left;
 }
