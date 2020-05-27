@@ -8,14 +8,17 @@ body{
 /* Paragráfo */
 p{
     color:orangered;
-    font-size: 40px;
-    font-style:"Arial, Times news roman" ;
+    font-size: 15px;
+    font-style:"Arial, Times news roman";
 }
 
 /* Títulos */
 h1{
-    color: white;
+    color:blue;
+    text-align: center;
+    margin:0 0 50px 0;
 }
+
 /*Remover espaçamento padrao do navegador */
 *{
     margin: 0;
@@ -40,14 +43,16 @@ footer{
 
 /* Div */
 #principal{
+    background-size: 100%;
+    background-image: url(../img/cidade.jpeg);
     background-color: red;
-    min-height:200px;
-    width: 60%;
-    float: left;
+    min-height:800px;
+    padding:100px;
 }
 
 /* calsses */
 .container{
    width: 960px;
-   margin: auto; 
+   margin: auto;
+   padding: auto;
 }
