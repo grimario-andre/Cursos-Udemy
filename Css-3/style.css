@@ -7,7 +7,7 @@ body{
 
 /* Paragráfo */
 p{
-    color:orangered;
+    color:black;
     font-size: 15px;
     font-style:"Arial, Times news roman";
 }
@@ -15,6 +15,7 @@ p{
 /* Títulos */
 h1{
     color:blue;
+    text-shadow: 1px 1px black;
     text-align: center;
     margin:0 0 50px 0;
 }
@@ -39,6 +40,8 @@ footer{
     background-color:#35B8AC;
     min-height: 100px;
     text-align: center;
+    color:blueviolet;
+    text-shadow: 1px 1px black;
 }
 
 /* Div */
@@ -55,4 +58,10 @@ footer{
    width: 960px;
    margin: auto;
    padding: auto;
+}
+
+/* Efeito sombra */
+.efeito{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10 0 100px 0;
 }
