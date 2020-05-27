@@ -1,1 +1,2 @@
-alert(" Hello Wolrd of Javascript! ");
+var mensagem = "Hello Wolrd of Javascript!";
+alert(mensagem);
