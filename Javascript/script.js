@@ -1,19 +1,19 @@
-//math operations.
+//condition structure.
 
-var a , b, soma, sub, multi, div;
+var a;
 
-a = 2;
-b = 3;
+prompt("Digite um número: ", a);
 
-soma = a + b;
-
-sub = b - a ;
-
-multi = a * b;
-
-div = b / a;
-
-alert(soma);
-alert(sub);
-alert(multi);
-alert(div);
+if (a % 2 == 0) {
+    alert("Número dividido por 2 com resto zero na divisão. ");
+} else {
+    if (a % 3 == 0) {
+        alert("Número dividido por 3 com resto zero.");
+    } else {
+        if ((a % 2 == 0) && (a % 3 == 0)) {
+            alert("Número é divisível por 2 e 3 com resto zero. ");
+        } else {
+            alert("Número não divisível por 2 e 3 com resto zero. ");
+        }
+    }
+}
