@@ -1,9 +1,11 @@
-//Events
+//Events DOM
 
-function mensagem(nome) {
-    alert("Ei não clique em mim " + nome);
+function mudacor(cor) {
+    var elemento = document.getElementById("mensagem");
+    elemento.style.backgroundColor = cor;
 }
 
-function mensagem1(nome) {
-    alert("Ei volte aqui " + nome);
+function cortexto(ctext) {
+    var elemento = document.getElementById('mensagem');
+    elemento.style.color = ctext;
 }
