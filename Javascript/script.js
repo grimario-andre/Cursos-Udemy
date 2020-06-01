@@ -1,12 +1,20 @@
-//Arrays!
-
-lista = Array = ["laranja", "maçã", "banana"];
-
-var veiculos = 
-carro => "BMW";
-caminhao => "Mercedez Benz";
-moto => "Kawazaki";
-
-for (i in lista){
-    alert(lista[i]);
+//functions
+/*
+function soma(a,b) {
+    console.log(a + b);
 }
+
+soma(4,6);
+*/
+
+function subtracao(a,b) {
+    return (a -b);
+}
+
+/*
+
+var s = subtracao;
+console.log(s);
+*/
+
+console.log(subtracao);
