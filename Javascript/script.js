@@ -1,20 +1,9 @@
-//functions
-/*
-function soma(a,b) {
-    console.log(a + b);
+//Events
+
+function mensagem(nome) {
+    alert("Ei não clique em mim " + nome);
 }
 
-soma(4,6);
-*/
-
-function subtracao(a,b) {
-    return (a -b);
+function mensagem1(nome) {
+    alert("Ei volte aqui " + nome);
 }
-
-/*
-
-var s = subtracao;
-console.log(s);
-*/
-
-console.log(subtracao);
