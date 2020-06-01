@@ -1,18 +1,12 @@
-//looping.
+//Arrays!
 
-for (i = 0; i < 5; i++) {
-    alert(i);
+lista = Array = ["laranja", "maçã", "banana"];
+
+var veiculos = 
+carro => "BMW";
+caminhao => "Mercedez Benz";
+moto => "Kawazaki";
+
+for (i in lista){
+    alert(lista[i]);
 }
-
-var j = 10;
-while (j >= 0) {
-    alert(j);
-
-    j = j - 1;
-}
-
-var i = 0;
-do {
-    alert(i)
-    i = i + 1;
-} while (i <= 5);
