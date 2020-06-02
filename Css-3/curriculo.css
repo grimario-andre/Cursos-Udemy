@@ -5,18 +5,29 @@ body{
 
 body div#curriculo{
     text-align: justify;
-    margin: -49px auto auto 88px;
+    margin: -49px auto auto auto;
 
 }
 
 img{
     width: 65px;
     height: 84px;
-    margin: 50px -90px -60px -90px;
+    margin: 50px -90px -60px 2px;
     border-style: solid;
     border-radius: 2px;
 }
 
+ul{
+    list-style-type: square;
+}
+
+a{
+    text-decoration:none;
+}
+
+h1{
+    margin: auto auto auto 90px;
+}
 /*
 body div#imagem{
     background-color: black;
