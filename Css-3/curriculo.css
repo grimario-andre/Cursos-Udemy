@@ -1,0 +1,36 @@
+body{
+    background-image: url(..//img/fundo.jpg);
+}
+
+
+body div#curriculo{
+    text-align: justify;
+    margin: -49px auto auto 88px;
+
+}
+
+img{
+    width: 65px;
+    height: 84px;
+    margin: 50px -90px -60px -90px;
+    border-style: solid;
+    border-radius: 2px;
+}
+
+/*
+body div#imagem{
+    background-color: black;
+    border: red;
+    width: 400px;
+    height: 680px;
+    margin: -692px auto 0 0;
+}
+
+body div#imagem2{
+    background-color: black;
+    border: red;
+    width: 400px;
+    height: 680px;
+    margin: -692px 0 0 auto;
+}
+*/
