@@ -11,11 +11,14 @@ $(document).ready(function(){
         $("p").fadeOut("slow");
         $("p").delay(5000);
         $("p").fadeIn();
+        $("#mensagem").text("Cor alterada com sucesso.");
+        $("#mensagem").css("color","red");
+        $("#mensagem").fadeOut(2000);
     });
 
     $("#esconder").click(function(){
-        $("h1").hide();
-        $("h1").fadeIn();
+        $("h1").hide(2000);
+        $("h1").fadeIn("slow");
     });
 
     $("#azul").click(function(){
