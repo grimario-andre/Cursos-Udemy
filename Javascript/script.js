@@ -1,35 +1,30 @@
-$(document).ready(function(){
-    $("#azul").click(function(){
-        $("p").css("color","blue")
-        .fadeOut(5000)
-        .delay(3000)
-        .fadeIn(2000);
+$(function(){
+    $("#l2").click(function(){
+        $("#i4").hide();
+        $("#i3").hide();
+        $("#i1").hide();
+        $("#i2").show();
     });
 
-    $("#vermelho").click(function(){
-        $("p").css("color","red")
-        .fadeOut("slow")
-        .delay(5000)
-        .fadeIn();
-
-        $("#mensagem")
-        .text("Cor alterada com sucesso.")
-        .css({color:'red', border:'1px solid red'})
-        .fadeOut(2000)
-        $("button").removeClass("red");
+    $("#l1").click(function(){
+        $("#i1").show();
+        $("#i2").hide();
+        $("#i3").hide();
+        $("#i4").hide();
     });
 
-    $("#esconder").click(function(){
-        $("h1").hide(2000)
-        .fadeIn("slow");
+    $("#l3").click(function(){
+        $("#i3").show();
+        $("#i2").hide();
+        $("#i1").hide();
+        $("#i4").hide();
     });
 
-    $("#azul").click(function(){
-        $("p").css("background-color","white");
-    });
-
-    $("#vermelho").click(function(){
-        $("p").css("background-color","yellow");
+    $("#l4").click(function(){
+        $("#i4").show();
+        $("#i3").hide();
+        $("#i2").hide();
+        $("#i1").hide();
     });
 });
 
