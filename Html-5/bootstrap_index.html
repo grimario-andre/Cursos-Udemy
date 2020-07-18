@@ -9,32 +9,43 @@
 <body>
     <div class="container">
         <p>Modal</p>
-        <button class=" btn btn-secondary" data-toggle="modal" data-target="#conteudoModal">Ativar modal</button>
+        <button class="btn btn-secondary" data-nome="Grimario" data-toggle="modal" data-target="#conteudoModal">Ativar modal</button>
+
+        <button class="btn btn-secondary" data-nome="aehuaeaheu" data-toggle="modal" data-target="#conteudoModal">Leitrua modal</button>
+
+        <button class="btn btn-secondary" data-nome="aehuaeaheu" data-toggle="modal" data-target="#conteudoModal">Para Nasa</button>
 
         <!-- Modal -->
         <div id="conteudoModal" class="modal fade">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
+
                     <!-- titulo -->
                     <div class="modal-header">
-                        <h4>Meu modal</h4>
+                        <h4 class="modal-title">Meu modal</h4>
                         <button class="close" data-dimiss="modal" aria-label="Fechar">
                             <span arial-hidden="true">&times;</span>
                         </button>
                     </div>
+
                     <!-- conteudo -->
                     <div class="modal-body">
                         <div class="row">
-                            <div class="col-5" style="background-color: red;">
-                                Texto do meu modal
+                            <div class="col-6">
+                                <span>Destinatário</span>
                             </div>
+                            <div class="col-8">
+                                <input type="text" name="para" class="form-control">
+                            </div>
+                        </div>
 
-                            <div class="col-5" style="background-color: blue;">
-                                Texto do meu modal
+                        <div class="row">
+                            <div class="col-4">
+                                <span>Mensagem: </span>
                             </div>
-                            
-                            <div class="col-5" style="background-color: coral;">
-                                Texto do meu modal
+                            <br>
+                            <div class="col-8">
+                                <textarea class="form-control"></textarea>
                             </div>
                         </div>
                     </div>
@@ -54,9 +65,13 @@
     <script src="../Javascript/jquery.js"></script>
     <script src="../bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
+        $("#conteudomodal").on("show.bs.modal", function(event){
+            var button = $(event.relatedTarget);
+            var recipient = button.data('nome');
+            var modal = $(this);
+            modal.find(".modal-title").text("Mensagem para " + recipient);
+            modal.find(".modal-body").val(recipient);
+        });    
     </script>
 </body>
 
