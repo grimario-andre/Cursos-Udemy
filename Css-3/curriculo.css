@@ -1,16 +1,18 @@
 body{
-    background-image: url(..//img/fundo.jpg);
+    background-image: url(../img/fundo.jpg);
 }
 
 
 body div#curriculo{
     text-align: justify;
     margin: -49px auto auto auto;
+    width: 700px;
+    height: 835.500px;
 
 }
 
 img{
-    width: 65px;
+    width: 75px;
     height: 84px;
     margin: 50px -90px -60px 2px;
     border-style: solid;
@@ -27,6 +29,10 @@ a{
 
 h1{
     margin: auto auto auto 90px;
+}
+
+p{
+    margin-top: 30px;
 }
 /*
 body div#imagem{

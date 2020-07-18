@@ -8,23 +8,43 @@
 
 <body>
     <div class="container">
-        <p>Popovers</p>
-        <!-- top -->
-        <button class="btn btn-primary" title="título do Popover" data-toggle="popover" data-content="Aqui é o conteúdo do meu popover"
-            data-placement="top">Meu popover</button>
-     
-        <!-- right -->
-        <button class="btn btn-primary" data-toggle="popover" data-content="Aqui é o conteúdo do meu popover"
-            data-placement="right">Meu popover</button>
-     
-        <!-- botton -->
-        <button class="btn btn-primary" data-toggle="popover" data-content="Aqui é o conteúdo do meu popover"
-            data-placement="left">Meu popover</button>
-      
-        <!-- left -->
-        <button class="btn btn-primary" data-toggle="popover" data-content="Aqui é o conteúdo do meu popover"
-            data-placement="bottom">Meu popover</button>
+        <p>Modal</p>
+        <button class=" btn btn-secondary" data-toggle="modal" data-target="#conteudoModal">Ativar modal</button>
 
+        <!-- Modal -->
+        <div id="conteudoModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- titulo -->
+                    <div class="modal-header">
+                        <h4>Meu modal</h4>
+                        <button class="close" data-dimiss="modal" aria-label="Fechar">
+                            <span arial-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- conteudo -->
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-5" style="background-color: red;">
+                                Texto do meu modal
+                            </div>
+
+                            <div class="col-5" style="background-color: blue;">
+                                Texto do meu modal
+                            </div>
+                            
+                            <div class="col-5" style="background-color: coral;">
+                                Texto do meu modal
+                            </div>
+                        </div>
+                    </div>
+                    <! -- rodapé -->
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-dimiss="modal">Fechar</button>
+                        </div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
 
@@ -33,9 +53,9 @@
     <!-- JS -->
     <script src="../Javascript/jquery.js"></script>
     <script src="../bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
-    <script>
+    <script type="text/javascript">
         $(function () {
-            $('[data-toggle="popover"]').popover();
+            $('[data-toggle="tooltip"]').tooltip();
         });
     </script>
 </body>
