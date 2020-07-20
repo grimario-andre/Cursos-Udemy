@@ -7,54 +7,56 @@
 </head>
 
 <body>
-    <div class="container">
-        <p>Modal</p>
-        <button class="btn btn-secondary" data-nome="Grimario" data-toggle="modal" data-target="#conteudoModal">Ativar modal</button>
 
-        <button class="btn btn-secondary" data-nome="aehuaeaheu" data-toggle="modal" data-target="#conteudoModal">Leitrua modal</button>
+    <div class="container" style="background-color: black; text-align: center;">
+        <h1>Carrocel</h1>
+        <div id="meu_slideshow" class="carousel-slide" class="caroulse-fade" data-ride="carousel">
 
-        <button class="btn btn-secondary" data-nome="aehuaeaheu" data-toggle="modal" data-target="#conteudoModal">Para Nasa</button>
+            <ol class="carousel-indicators">
+                <li data-target="#meu_slideshow" data-slide-two="0" class="active"></li>
+                <li data-target="#meu_slideshow" data-slide-two="1"></li>
+                <li data-target="#meu_slideshow" data-slide-two="2"></li>
+            </ol>
 
-        <!-- Modal -->
-        <div id="conteudoModal" class="modal fade">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-
-                    <!-- titulo -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Meu modal</h4>
-                        <button class="close" data-dimiss="modal" aria-label="Fechar">
-                            <span arial-hidden="true">&times;</span>
-                        </button>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/carrocel1.jpeg" alt="paisagem de uma ponte sobre um rio">
+                  
+                    <div class="carousel-caption d-none d-mod-block">
+                        <h5> Natureza 1</h5>
+                        <p>Ponto sobre o rio</p>
                     </div>
-
-                    <!-- conteudo -->
-                    <div class="modal-body">
-                        <div class="row">
-                            <div class="col-6">
-                                <span>Destinatário</span>
-                            </div>
-                            <div class="col-8">
-                                <input type="text" name="para" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-4">
-                                <span>Mensagem: </span>
-                            </div>
-                            <br>
-                            <div class="col-8">
-                                <textarea class="form-control"></textarea>
-                            </div>
-                        </div>
-                    </div>
-                    <! -- rodapé -->
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" data-dimiss="modal">Fechar</button>
-                        </div>
                 </div>
+
+                <div class="carousel-item">
+                    <img src="../img/carrocel2.jpeg" alt="Floresta na epoca do outono">
+
+                    <div class="carousel-caption d-none d-mod-block">
+                        <h5> Natureza 2</h5>
+                        <p>Floresta no outono</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="../img/carrocel4.jpeg" alt="nascer do sol">
+                    
+                    <div class="carousel-caption d-none d-mod-block">
+                        <h5> Natureza 3</h5>
+                        <p>Nascer do sol</p>
+                    </div>
+                </div>
+                
             </div>
+
+            <a class="carousel-control-prev" href="#meu_slideshow" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-olny">Anterior</span>
+            </a>
+
+            <a class="carousel-crontrol-next" href="#meu_slideshow" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-olny">Posterior</span>
+            </a>
         </div>
     </div>
     <footer>
@@ -65,13 +67,7 @@
     <script src="../Javascript/jquery.js"></script>
     <script src="../bootstrap-4.5.0-dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
-        $("#conteudomodal").on("show.bs.modal", function(event){
-            var button = $(event.relatedTarget);
-            var recipient = button.data('nome');
-            var modal = $(this);
-            modal.find(".modal-title").text("Mensagem para " + recipient);
-            modal.find(".modal-body").val(recipient);
-        });    
+        $('#caixalivro').scrollspy({ target: '#livro' });
     </script>
 </body>
 
